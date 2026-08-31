@@ -1,0 +1,97 @@
+*----------------------------------------------------------------------------------------
+*	Innovus 21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+*	
+*
+* 	Date & Time:	2026-Sep-01 00:24:19 (2026-Aug-31 18:54:19 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: bf16_mac
+*
+*	Liberty Libraries used: 
+*	        view_default: /storage/DDF_user45/projects/3_bf16_mac/backend/bf16_mac_cts.dat.dat/libs/mmmc/tsl18fs120_scl_ss.lib
+*
+*	Power Domain used: 
+*              Rail:        VDD      Voltage:       1.62 
+*
+*       Power View : view_default
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -outfile power_postroute.rpt
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:        4.76942390 	   69.7133%
+Total Switching Power:       2.07161086 	   30.2801%
+Total Leakage Power:         0.00044757 	    0.0065%
+Total Power:                 6.84148233 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                         3.281      0.2219   0.0001804       3.503        51.2 
+Macro                                  0           0           0           0           0 
+IO                                     0           0           0           0           0 
+Combinational                      1.224       1.279   0.0002466       2.502       36.58 
+Clock (Combinational)             0.2651      0.5711   2.055e-05      0.8363       12.22 
+Clock (Sequential)                     0           0           0           0           0 
+-----------------------------------------------------------------------------------------
+Total                              4.769       2.072   0.0004476       6.841         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                      1.62      4.769       2.072   0.0004476       6.841         100 
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+clk                               0.2651      0.5711   2.055e-05      0.8363       12.22 
+-----------------------------------------------------------------------------------------
+Total (excluding duplicates)      0.2651      0.5711   2.055e-05      0.8363       12.22 
+-----------------------------------------------------------------------------------------
+Clock: clk
+Clock Period: 0.004000 usec 
+Clock Toggle Rate:   500.0000 Mhz 
+Clock Static Probability:  0.5000
+
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*                Highest Average Power:       CTS_ccl_a_buf_00001 (bufbdf):           0.2875 
+*                Highest Leakage Power:       CTS_ccl_a_buf_00003 (bufbdf):         6.85e-06 
+*          Total Cap:      2.07439e-11 F
+*          Total instances in design:  1339
+*          Total instances in design with no power:     0
+*          Total instances in design with no activity:     0
+*          Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+
