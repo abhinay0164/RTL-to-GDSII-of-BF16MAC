@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : bf16_mac
+Version: T-2022.03-SP5
+Date   : Wed Aug 26 23:27:55 2026
+****************************************
+
+Library(s) Used:
+
+    tsl18fs120_scl_ss (File: /home/DDF_workshop/SCL_PDK_v2/scl_pdk_v2/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.db)
+
+Number of ports:                           52
+Number of nets:                          1422
+Number of cells:                         1364
+Number of combinational cells:           1165
+Number of sequential cells:               199
+Number of macros/black boxes:               0
+Number of buf/inv:                        268
+Number of references:                      81
+
+Combinational area:              21120.830029
+Buf/Inv area:                     2750.019993
+Noncombinational area:           13334.820107
+Macro/Black Box area:                0.000000
+Net Interconnect area:             991.665995
+
+Total cell area:                 34455.650136
+Total area:                      35447.316131
+1

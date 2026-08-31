@@ -1,0 +1,58 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : bf16_mac
+Version: T-2022.03-SP5
+Date   : Wed Aug 26 23:27:55 2026
+****************************************
+
+
+Library(s) Used:
+
+    tsl18fs120_scl_ss (File: /home/DDF_workshop/SCL_PDK_v2/scl_pdk_v2/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.db)
+
+
+Operating Conditions: tsl18fs120_scl_ss   Library: tsl18fs120_scl_ss
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+bf16_mac               35000             tsl18fs120_scl_ss
+
+
+Global Operating Voltage = 1.62 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   2.8878 mW   (89%)
+  Net Switching Power  = 373.6700 uW   (11%)
+                         ---------
+Total Dynamic Power    =   3.2614 mW  (100%)
+
+Cell Leakage Power     = 500.4239 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      2.6790            0.0000            0.0000            2.6790  (  82.13%)  i
+register       6.7811e-02        3.0088e-02        2.0773e+05        9.8106e-02  (   3.01%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.1410            0.3436        2.9270e+05            0.4849  (  14.86%)
+--------------------------------------------------------------------------------------------------
+Total              2.8878 mW         0.3737 mW     5.0042e+05 pW         3.2619 mW
+1

@@ -1,0 +1,66 @@
+Information: Changed wire load model for 'bf16_mac' from '70000' to '35000'. (OPT-170)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : bf16_mac
+Version: T-2022.03-SP5
+Date   : Wed Aug 26 23:27:55 2026
+****************************************
+
+Operating Conditions: tsl18fs120_scl_ss   Library: tsl18fs120_scl_ss
+Wire Load Model Mode: top
+
+  Startpoint: mul4/ma_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: mul4/prod_reg[13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bf16_mac           35000                 tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  mul4/ma_reg[0]/CP (dfcrq2)               0.00       0.00 r
+  mul4/ma_reg[0]/Q (dfcrq2)                0.56       0.56 f
+  U911/ZN (inv0d4)                         0.16       0.72 r
+  U971/ZN (nr02d2)                         0.08       0.80 f
+  U1070/CO (cg01d4)                        0.37       1.17 f
+  U1074/ZN (nr02d2)                        0.12       1.29 r
+  U656/ZN (nd12d1)                         0.19       1.49 r
+  U1040/ZN (nd02d2)                        0.10       1.59 f
+  U1112/CO (cg01d4)                        0.36       1.96 f
+  U988/Z (xr03d2)                          0.53       2.49 f
+  U986/ZN (nd02d2)                         0.13       2.62 r
+  U1249/ZN (inv0d2)                        0.08       2.70 f
+  U985/ZN (nd12d2)                         0.08       2.78 r
+  U934/ZN (nd02d2)                         0.11       2.89 f
+  U932/ZN (nd02d2)                         0.12       3.01 r
+  U929/ZN (nd03d2)                         0.17       3.18 f
+  U928/ZN (xn02d2)                         0.42       3.60 r
+  U1076/ZN (nd02d2)                        0.08       3.68 f
+  U1075/ZN (nd02d2)                        0.11       3.79 r
+  mul4/prod_reg[13]/D (dfcrq1)             0.00       3.79 r
+  data arrival time                                   3.79
+
+  clock clk (rise edge)                    4.00       4.00
+  clock network delay (ideal)              0.00       4.00
+  mul4/prod_reg[13]/CP (dfcrq1)            0.00       4.00 r
+  library setup time                      -0.16       3.84
+  data required time                                  3.84
+  -----------------------------------------------------------
+  data required time                                  3.84
+  data arrival time                                  -3.79
+  -----------------------------------------------------------
+  slack (MET)                                         0.05
+
+
+1
