@@ -1,0 +1,10 @@
+# Read the pipelined RTL files
+read_file -type verilog ../rtl/bf16_multiplier.v
+read_file -type verilog ../rtl/bf16_adder.v
+read_file -type verilog ../rtl/bf16_mac.v
+
+# Define the top module
+set_option top bf16_mac
+
+# Enable strict SystemVerilog/Verilog linting rules
+set_option language_mode mixed
